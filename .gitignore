@@ -1,0 +1,33 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ---------- Herramientas ----------
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Datos locales ----------
+# La base SQLite de la app nunca se versiona
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------- Arduino / PlatformIO ----------
+firmware/**/.pio/
+
+# ---------- Credenciales del firmware ----------
+# Credenciales reales viven en config.local.h (ver docs/04-firmware.md)
+firmware/**/config.local.h
+
+# ---------- IDE / SO ----------
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
